@@ -69,12 +69,19 @@ body {
     justify-content: center;
     margin: 10px;
     gap: 10px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 
 
-
 button {
+    
     width: 200px;
     height: 48px;
     cursor: pointer;
