@@ -238,31 +238,60 @@ li {
 
 .logout-button {
     position: relative;
-    left: 10px;
+    color: black;
     background: none;
-    text-decoration: none;
     border: none;
+    outline: none;
     cursor: pointer;
-    color: #ffffff;
-    font-size: 50px;
-    padding: 0;
+    left: 90%; 
 }
 
 
 
 
 .miniatura {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin: 5px;
     cursor: pointer;
+}
+
+#contenedorImagenes {
+    display: none;
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.miniatura:hover {
+    opacity: 0.5;
 }
 
 .oculto {
     display: none;
 }
 
+.fondo{
+    position: absolute;
+    top: 15%; /* Ajusta la posición vertical del ícono */
+    left: 50%; /* Ajusta la posición horizontal del ícono */
+    cursor: pointer;
+    z-index: 2;
+    cursor: pointer;
 
+}
+
+@media screen and (max-width: 767px) {
+    .miniatura {
+        width: 40px; 
+        height: 40px;
+        margin: 3px;
+    }
+}
 
 @media (max-width: 400px) {
     body {

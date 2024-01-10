@@ -123,12 +123,11 @@ logoutButton.addEventListener('click', () => {
 
 
 //------
-document.addEventListener("DOMContentLoaded", function () {
-    var imagenPredeterminada = "../img/3.jpg"; 
-    document.body.style.backgroundImage = "url('" + imagenPredeterminada + "')";
-});
 
-document.getElementById("cambiarFondo").addEventListener("click", function () {
+
+
+
+document.querySelector(".material-symbols-outlined").addEventListener("click", function () {
     var contenedor = document.getElementById("contenedorImagenes");
     contenedor.classList.toggle("oculto");
 });
@@ -136,9 +135,24 @@ document.getElementById("cambiarFondo").addEventListener("click", function () {
 var miniaturas = document.querySelectorAll(".miniatura");
 miniaturas.forEach(function (miniatura) {
     miniatura.addEventListener("click", function () {
-        var rutaImagen = this.getAttribute("src").replace("thumbnail", ""); 
+        var rutaImagen = this.getAttribute("src");
         document.body.style.backgroundImage = "url('" + rutaImagen + "')";
     });
 });
+
+
+
+document.querySelector(".material-symbols-outlined").addEventListener("click", function () {
+    var contenedor = document.getElementById("contenedorImagenes");
+    contenedor.classList.toggle("oculto-horizontal"); 
+    
+
+    if (contenedor.classList.contains("oculto-horizontal")) {
+        contenedor.style.display = "none";
+    } else {
+        contenedor.style.display = "flex";
+    }
+});
+
 
 
