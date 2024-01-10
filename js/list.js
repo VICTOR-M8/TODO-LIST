@@ -123,22 +123,22 @@ logoutButton.addEventListener('click', () => {
 
 
 //------
-// document.addEventListener("DOMContentLoaded", function () {
-//     var imagenPredeterminada = "/img/3.jpg"; 
-//     document.body.style.backgroundImage = "url('" + imagenPredeterminada + "')";
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    var imagenPredeterminada = "../img/3.jpg"; 
+    document.body.style.backgroundImage = "url('" + imagenPredeterminada + "')";
+});
 
-// document.getElementById("cambiarFondo").addEventListener("click", function () {
-//     var contenedor = document.getElementById("contenedorImagenes");
-//     contenedor.classList.toggle("oculto");
-// });
+document.getElementById("cambiarFondo").addEventListener("click", function () {
+    var contenedor = document.getElementById("contenedorImagenes");
+    contenedor.classList.toggle("oculto");
+});
 
-// var miniaturas = document.querySelectorAll(".miniatura");
-// miniaturas.forEach(function (miniatura) {
-//     miniatura.addEventListener("click", function () {
-//         var rutaImagen = this.getAttribute("src").replace("thumbnail", ""); 
-//         document.body.style.backgroundImage = "url('" + rutaImagen + "')";
-//     });
-// });
+var miniaturas = document.querySelectorAll(".miniatura");
+miniaturas.forEach(function (miniatura) {
+    miniatura.addEventListener("click", function () {
+        var rutaImagen = this.getAttribute("src").replace("thumbnail", ""); 
+        document.body.style.backgroundImage = "url('" + rutaImagen + "')";
+    });
+});
 
 
